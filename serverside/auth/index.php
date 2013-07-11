@@ -1,15 +1,6 @@
 <?
 //$host = "https://www.realiseuwb.com";
-$host = "http://laptop.thefinn93.com";
-if(isset($_REQUEST['dest'])) {
-    if($_REQUEST['dest'] == "laptopproxy.thefinn93.com" || $_REQUEST['dest'] == "beta.realiseuwb.com") {
-        $host = "http://".$_REQUEST['dest'];
-    } else {
-        error_log($_REQUEST['dest']." not in authorized domains");
-    }
-} else {
-    error_log("No dest set, defaulting to ".$host);
-}
+$host = "https://www.realiseuwb.com";
 
 $token = uniqid();
 $a = fopen("tmp/".$token,"w+");
