@@ -60,7 +60,7 @@ function fnUWNetIDAuthenticateHook($user, &$result)
                         {
                                 // Create the user
                                 $u->addToDatabase();
-                                $u->setEmail($username."@uw.edu");
+                                $u->setEmail($response->username."@uw.edu");
                                 $u->setPassword( md5($username.uniqid()) ); // do something random
                                 $u->setToken();
                                 $u->saveSettings();
