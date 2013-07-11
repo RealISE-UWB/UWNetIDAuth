@@ -1,5 +1,4 @@
 <?
-//$host = "https://www.realiseuwb.com";
 $host = "https://www.realiseuwb.com";
 
 $token = uniqid();
